@@ -1,15 +1,22 @@
 ---
 name: Martina Giron
+<<<<<<< HEAD
 date: "`r format(Sys.time(), '%B, %Y')`"
 <<<<<<< HEAD
 qualifications: BS Statistics
 position: Data Analyst
 address: Makati, Philippines
+=======
+qualifications: BS Statistics
+position: Data Analyst
+address: Makati City, Philippines
+>>>>>>> original
 email: msgiron@up.edu.ph
 website: martinagiron.github.io
 github: MartinaGiron
 linkedin: martinagiron
 twitter: martstats
+<<<<<<< HEAD
 =======
 qualifications: BCom(Hons), BSc
 position: Data Scientist
@@ -21,6 +28,8 @@ github: mitchelloharawild
 linkedin: mitchelloharawild
 twitter: mitchoharawild
 >>>>>>> parent of 45ea838 (Restructure and update CV)
+=======
+>>>>>>> original
 headcolor: "414141"
 output: 
   vitae::awesomecv:
@@ -34,11 +43,15 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> original
 # Work Experience
 
 ```{r consulting}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
+<<<<<<< HEAD
   "Technical Writer", "Towards Data Science", "Pasig City, Philippines", "August 2022 - Present", 
     list("Write tutorials on cleaning, visualizing, and analyzing data in R.",
          "Document code in Github and create synthetic datasets to be used."
@@ -50,6 +63,20 @@ tribble(
   "Research Volunteer", "PhilRights", "Philippines", "July - August 2022", 
   list("Organized records of human rights abuses in Microsoft Excel.",
   "Identified areas with high incidence of human rights abuses and pinpointed common scenarios of extrajudicial killings.")
+=======
+  "Technical Writer", "Towards Data Science", "August 2022 - Present", "", 
+    list("Write tutorials on cleaning, visualizing, and analyzing data in R.",
+         "Create synthetic datasets and document code in Github."
+
+    ),
+  "Data Intern", "Rappler", "July - August 2022", "",
+    list("Write data stories on relevant Philippine news and and issues.", 
+         "Process data scraped from social media with R and created interactive visualizations in Flourish.",
+         "Assist journalists in classifying online sources of misinformation"),
+  "Research Volunteer", "PhilRights", "July - August 2022", "", 
+  list("Identified areas with high incidence of human rights abuses and pinpointed common scenarios of extrajudicial killings.","Organized records of human rights abuses in Microsoft Excel."
+  )
+>>>>>>> original
   # "Data mining intern", "iSelect", "Cheltenham, Australia", "Feb. 2015 - Mar. 2015", "Improved business reporting with interactive visualisations, and model-based anomaly detection.",
 ) %>% 
   detailed_entries(role, dates, company, loc, details)
@@ -61,6 +88,7 @@ tribble(
 ```{r education}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+<<<<<<< HEAD
 <<<<<<< HEAD
   "BS Statistics", "University of the Philippines-Diliman", "Quezon City, Philippines", "August 2019 - July 2023", 
     list("GWA: 1.30, DOST Merit Scholar, Dean's Commendation, and best in class for 5 units.",
@@ -77,10 +105,20 @@ tribble(
   "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Participant of the Vice-Chancellor's Ancora Imparo Student Leadership Program (2014)",
   "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Studied a broad collection of units covering many aspects of data science. The three disciplines I majored in explored different perspectives for working with data."
 >>>>>>> parent of 45ea838 (Restructure and update CV)
+=======
+  "BS Statistics", "University of the Philippines-Diliman", "Quezon City, Philippines", "August 2019 - July 2023", 
+    list("GWA: 1.30, DOST Merit Scholar",
+         "Consistent University Scholar (equivalent to President's Lister)",
+         "Studied courses on statistical inference, statistical quality control, scientific writing, and programming."),
+  "STEM Track", "Makati Science High School", "Makati City, Philippines", "June 2013 - April 2019", 
+    list("Graduated with Honors")
+>>>>>>> original
 ) %>% 
   detailed_entries(degree, dates, uni, loc, details)
+
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <!-- # # Teaching Experience
 
@@ -198,11 +236,85 @@ tribble(
   brief_entries(glue::glue("\\textbf{<pkg>}: <role> \\newline <details>", .open = "<", .close = ">"), when, .protect = FALSE)
 ```
 >>>>>>> parent of 45ea838 (Restructure and update CV)
+=======
+<!-- # Work Experience -->
 
-<!-- ## Academic research -->
+<!-- ## University Tutoring -->
 
-<!-- fasster, taipan, fable -->
+<!-- <!-- My teaching quality at Monash University has been consistently recognised with positive student evaluations and individual praise from my students. I have also been awarded six congratulatory letters for outstanding student evaluations for four of my units (ETF5231, ETC3580, ETC3550, ETC5523), which indicates that student feedback for the unit is among the best in the university. --> 
 
+<!-- ```{r tutoring} -->
+<!-- tribble( -->
+<!--   ~ title, ~ code, ~ campus, ~ semester, ~ purple, -->
+<!--   "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2021 S1", NA, -->
+<!--   "Communicating with Data", "ETC5523", "Clayton", "2020 S2", TRUE, -->
+<!--   "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2020 S1", TRUE, -->
+<!--   "Advanced statistical modelling", "ETC3580", "Clayton", "2019 S2", TRUE, -->
+<!--   "Data modelling and computing", "ETC1010", "Clayton", "2019 S2", FALSE, -->
+<!--   "Data modelling and computing", "ETC1010", "Clayton", "2019 S1", FALSE, -->
+<!--   "Applied forecasting for business and economics", "ETC3550/ETC5550", "Clayton", "2019 S1", TRUE, -->
+<!--   "Data modelling and computing", "ETC1010", "Clayton", "2018 S2", FALSE, -->
+<!--   "Advanced statistical modelling", "ETC3580", "Clayton", "2018 S2", TRUE, -->
+<!--   "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2018 S1", TRUE, -->
+<!--   "Data modelling and computing", "ETC1010", "Clayton", "2017 S2", FALSE, -->
+<!--   "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2017 S1", FALSE, -->
+<!--   "Mathematics for business", "ETF2700", "Caulfield", "2016 S2", FALSE, -->
+<!--   "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2016 S1", FALSE -->
+<!-- ) %>%  -->
+<!--   brief_entries(glue::glue("\\textbf{<code>}: <title> (Monash <campus>)", .open = "<", .close = ">"), semester, .protect = FALSE) -->
+<!-- ``` -->
+
+<!-- \newpage -->
+
+<!-- ## Industry Workshops -->
+
+<!-- <!-- In addition to sessional tutoring, I also teach data analysis workshops for working professionals. --> 
+
+<!-- ```{r workshops} -->
+<!-- tribble( -->
+<!--   ~ role, ~ course, ~ organisation, ~ country, ~ dates, ~ details, -->
+<!--   "Teaching assistant", "Tidy Time Series and Forecasting in R", "rstudio::conf", "USA", "Jan. 2020", "Two day workshop with Rob Hyndman on forecasting using tidyverse workflows.", -->
+<!--   "Instructor", "Interactive documents with Shiny", "CSIRO", "Australia", "Nov. 2019", "Two day intermediate workshop on developing of shiny applications.", -->
+<!--   "Instructor", "Data Wrangling", "Monash University", "Australia", "Sep. 2019", "A short workshop in the 'R Workshops for Beginners' series on using tidyr and dplyr to wrangle data.", -->
+<!--   "Helper", "Tidyverse developer day", "RStudio", "France", "Jul. 2019", "A one day developer day where I helped R users resolve issues on tidyverse packages.", -->
+<!--   "Teaching assistant", "High-dimensional time series analysis", "ISI WSC", "Malaysia", "Aug. 2019", "One day short course with Rob Hyndman for analysing and forecasting large collections of time series.", -->
+<!--   "Instructor", "The grammar of animation", "Monash University", "Australia", "Mar. 2019", "A short workshop for NUMBAT group on creating animated graphics in R with the gganimate package.", -->
+<!--   "Teaching assistant", "Master R Developer Workshop", "RStudio", "Australia", "Dec. 2016", "A two day workshop with Hadley Wicham on programming with R and developing R packages.", -->
+<!-- ) %>%  -->
+<!--   brief_entries(glue::glue("\\textbf{<course>}: <role> (<organisation>, <country>) \\newline <details>", .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE) -->
+<!-- ``` -->
+
+<!-- # Software development -->
+
+<!-- <!-- My primary research output is the translation of academic research into open source software packages. --> 
+
+<!-- ```{r r-pkgs} -->
+<!-- tribble( -->
+<!--   ~ pkg, ~ when, ~ role, ~ details, -->
+<!--   "distributional", "2020", "Lead developer", "Vectorised distribution objects with methods for manipulating and computing on probability distributions.", -->
+<!--   "fable", "2019", "Lead developer", "A collection of time series models for use in a tidyverse workflow.", -->
+<!--   "fable.prophet", "2019", "Lead developer", "Extension package implementing the prophet forecasting procedure for fable.", -->
+<!--   "feasts", "2019", "Lead developer", "A collection of features, decompositions, statistics and graphics tools for the analysing tidy time series data.", -->
+<!--   "fabletools", "2019", "Lead developer", "Provides common utilities for the fable forecasting framework, allows users to extend fable with new models.", -->
+<!--   "tsibbledata", "2019", "Lead developer", "Diverse datasets in a tidy time series data structure (tsibble). Useful in examples of tidy time series analysis.", -->
+<!--   "tsfeatures", "2019", "Author", "Various methods for extracting features from time series data.", -->
+<!--   "tsibble", "2018", "Contributor", "Tidy temporal data structures and tools. The data for the tidy time series collection of packages.", -->
+<!--   "vitae", "2018", "Lead developer", "Dynamically generate a Résumé or CV using R Markdown. This CV is created using code with that package!", -->
+<!--   "fasster", "2017", "Lead developer", "Implementation of the FASSTER model for forecasting complex multiple seasonal patterns.", -->
+<!--   "icon", "2017", "Lead developer", "Embed SVG icons in R documents such as slides, reports and apps.", -->
+<!--   "taipan", "2018", "Lead developer", "Generates shiny apps for annotating image data, which is useful for training machine learning models.", -->
+<!--   "ggquiver", "2017", "Lead developer", "Extends ggplot2 for displaying vector fields on plots.", -->
+<!--   "forecast", "2015", "Author", "Methods and tools analysing univariate time series data and producing model-based forecasts." -->
+<!-- ) %>%  -->
+<!--   brief_entries(glue::glue("\\textbf{<pkg>}: <role> \\newline <details>", .open = "<", .close = ">"), paste0(when, "\\newline"), .protect = FALSE) -->
+<!-- ``` -->
+>>>>>>> original
+
+<!-- <!-- ## Academic research --> 
+
+<!-- <!-- fasster, taipan, fable --> 
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 \newpage
 
@@ -218,21 +330,57 @@ tribble(
   "How hot has it gotten in the Philippines?", "Animated visualization of the temperature in each Philippine region in the last century.", "R", "https://github.com/MartinaGiron/R-Portfolio/tree/main/Philippines-AveTemp-Over-Time"
 =======
 ## Presentations
+=======
 
-```{r talks}
+# Data Analytics Projects
+>>>>>>> original
+
+## Visualizations and Analyses
+
+```{r projects}
 tribble(
   ~ when, ~ title, ~ details, ~ where, ~ url,
+<<<<<<< HEAD
   "2019", "Flexible futures for fable functionality", "Gradual introduction to tidy forecasting with fable. Flexibility is demonstrated with combination modelling and package extensibilitiy.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
   "2019", "Flexible futures for fable functionality", "Reconciled forecasting of many time series with model combinations.", "ISF 2019", "https://slides.mitchelloharawild.com/isf2019/",
   "2018", "Tidy forecasting in R", "Discussion of recent developments to the fable framework.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
   "2018", "Forecasting multiple seasonality with state switching", "The FASSTER model with the fable framework.", "useR! 2018", "https://slides.mitchelloharawild.com/user2018",
   "2017", "Models for forecasting multiple seasonality", "An introduction to the FASSTER model.", "MelbURN meetup", "https://slides.mitchelloharawild.com/melburn17/",
 >>>>>>> parent of 45ea838 (Restructure and update CV)
+=======
+  "Tableau", "Employee Exit Survey Dashboard", "Trends in company's attrition rates visualized in an interactive dashboard.", "UK NHS", "tinyurl.com/tableau-employee-dashboard",
+  "R", "Analyzing Soccer Matches from the 2018-2019 English Premier League", "Determining the top performing soccer teams and possible predictors of winning.", "ISF", "https://tinyurl.com/soccer-analysis",
+  "R", "How hot has it gotten in the Philippines?", "Animated visualization of the temperature in each Philippine region in the last century.", "MelbURN meetup", "https://github.com/MartinaGiron/R-Portfolio/tree/main/Philippines-AveTemp-Over-Time",
+  "R", "Mapping Discrimination Against Lesbians in Europe", "Mapping the proportion of lesbians who personally felt discriminated against or harassed on the grounds of gender.", "ISF", "https://github.com/MartinaGiron/R-Portfolio/tree/main/tidyrainbow-map",
+>>>>>>> original
 ) %>% 
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), .protect = FALSE)
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+
+## Articles for Towards Data Science
+
+```{r articles}
+tribble(
+  ~ when, ~ title, ~ details, ~ where, ~ url,
+  "R", "Customize Your ggplot2 Bar Graph - 5 ways to instantly improve your R data visualizations", "How to grab your reader’s attention and make professional-looking graphs", "UK NHS", "https://towardsdatascience.com/customize-your-ggplot2-bar-graph-5-ways-to-instantly-improve-your-r-data-visualizations-f9c11dfe0163",
+  "R", "How to Create a Custom Dataset in R", "Make your own synthetic dataset to analyze for your portfolio", "ISF", "https://towardsdatascience.com/how-to-create-a-custom-dataset-in-r-cf045e286656",
+) %>% 
+  brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+```
+<!-- # Data analysis projects -->
+
+<!-- # Related interests -->
+<!-- * Home automation -->
+<!-- * Beekeeping -->
+<!-- * Permaculture -->
+<!-- * Electronics design -->
+<!-- * Woodworking -->
+>>>>>>> original
 
 <!-- # Relevant Skills -->
 <!-- ```{r} -->
