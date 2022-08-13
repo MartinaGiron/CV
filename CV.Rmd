@@ -92,27 +92,6 @@ tribble(
 
 My primary research output is the translation of academic research into open source software packages. -->
 
-# ```{r r-pkgs}
-# tribble(
-#  ~ pkg, ~ when, ~ role, ~ details,
-# "distributional", "2020", "Lead developer", "Vectorised distribution objects with methods for manipulating and computing on probability distributions.",
-# "fable", "2019", "Lead developer", "A collection of time series models for use in a tidyverse workflow.",
-# "fable.prophet", "2019", "Lead developer", "Extension package implementing the prophet forecasting procedure for fable.",
-# "feasts", "2019", "Lead developer", "A collection of features, decompositions, statistics and graphics tools for the analysing tidy time series data.",
-# "fabletools", "2019", "Lead developer", "Provides common utilities for the fable forecasting framework, allows users to extend fable with new models.",
-# "tsibbledata", "2019", "Lead developer", "Diverse datasets in a tidy time series data structure (tsibble). Useful in examples of tidy time series analysis.",
-# "tsfeatures", "2019", "Author", "Various methods for extracting features from time series data.",
-# "tsibble", "2018", "Contributor", "Tidy temporal data structures and tools. The data for the tidy time series collection of packages.",
-# "vitae", "2018", "Lead developer", "Dynamically generate a Résumé or CV using R Markdown. This CV is created using code with that package!",
-# "fasster", "2017", "Lead developer", "Implementation of the FASSTER model for forecasting complex multiple seasonal patterns.",
-# "icon", "2017", "Lead developer", "Embed SVG icons in R documents such as slides, reports and apps.",
-# "taipan", "2018", "Lead developer", "Generates shiny apps for annotating image data, which is useful for training machine learning models.",
-#  "ggquiver", "2017", "Lead developer", "Extends ggplot2 for displaying vector fields on plots.",
-# "forecast", "2015", "Author", "Methods and tools analysing univariate time series data and producing model-based forecasts."
-# ) %>% 
-# brief_entries(glue::glue("\\textbf{<pkg>}: <role> \\newline <details>", .open = "<", .close = ">"), paste0(when, "\\newline"), .protect = FALSE)
-# ```
-
 <!-- ## Academic research -->
 
 <!-- fasster, taipan, fable -->
@@ -121,18 +100,14 @@ My primary research output is the translation of academic research into open sou
 
 # Data Analysis Projects
 
-## Sample Projects
+## Analytics and Visualization Projects
 
 ```{r talks}
 tribble(
    ~ title, ~ details, ~ where, ~ url,
-  "Forecasting with multiple seasonality", "Methods and techniques to multiple seasonal forecasting in R", "UK NHS", "https://slides.mitchelloharawild.com/nhs2020/",
-  "Probabilistic cross-temporal hierarchies", "Recent developments of temporal reconciliation in fable.", "ISF", "https://slides.mitchelloharawild.com/isf2020/",
-  "Flexible futures for fable functionality", "Gradual introduction to tidy forecasting with fable. Flexibility is demonstrated with combination modelling and package extensibilitiy.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
-  "Flexible futures for fable functionality", "Reconciled forecasting of many time series with model combinations.", "ISF", "https://slides.mitchelloharawild.com/isf2019/",
-  "Tidy forecasting in R", "Discussion of recent developments to the fable framework.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
-  "Forecasting multiple seasonality with state switching", "The FASSTER model with the fable framework.", "useR!", "https://slides.mitchelloharawild.com/user2018",
-  "Models for forecasting multiple seasonality", "An introduction to the FASSTER model.", "MelbURN meetup", "https://slides.mitchelloharawild.com/melburn17/",
+  "Employee Exit Survey Dashboard", "Trends in company's attrition rates visualized in an interactive dashboard.", "Tableau", "https://public.tableau.com/app/profile/martstats/viz/HRExitSurvey/Dashboard1?publish=yes",
+  "Analyzing Soccer Matches from the 2018-2019 English Premier League", "Determining the top performing soccer teams and possible predictors of winning", "R | Jupyter Notebook", "https://github.com/MartinaGiron/R-Portfolio/blob/main/Soccer%20Analysis/Soccer%20Analysis.ipynb",
+  "How hot has it gotten in the Philippines?", "Animated visualization of the temperature in each Philippine region in the last century.", "R", "https://github.com/MartinaGiron/R-Portfolio/tree/main/Philippines-AveTemp-Over-Time"
 ) %>% 
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), .protect = FALSE)
 ```
