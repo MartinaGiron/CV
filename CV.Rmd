@@ -27,16 +27,16 @@ tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Technical Writer", "Towards Data Science", "August 2022 - Present", "", 
     list("Write tutorials on cleaning, visualizing, and analyzing data in R.",
-         "Document code in Github and create synthetic datasets to be used."
+         "Create synthetic datasets and document code in Github."
 
     ),
   "Data Intern", "Rappler", "July - August 2022", "",
     list("Write data stories on relevant Philippine news and and issues.", 
-         "Process data scraped from social media with R created interactive visualizations in Flourish.",
-         "Assist journalists in tagging online sources of misinformation"),
+         "Process data scraped from social media with R and created interactive visualizations in Flourish.",
+         "Assist journalists in classifying online sources of misinformation"),
   "Research Volunteer", "PhilRights", "July - August 2022", "", 
-  list("Organized records of human rights abuses in Microsoft Excel.",
-  "Identified areas with high incidence of human rights abuses and pinpointed common scenarios of extrajudicial killings.")
+  list("Identified areas with high incidence of human rights abuses and pinpointed common scenarios of extrajudicial killings.","Organized records of human rights abuses in Microsoft Excel."
+  )
   # "Data mining intern", "iSelect", "Cheltenham, Australia", "Feb. 2015 - Mar. 2015", "Improved business reporting with interactive visualisations, and model-based anomaly detection.",
 ) %>% 
   detailed_entries(role, dates, company, loc, details)
@@ -48,8 +48,8 @@ tribble(
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
   "BS Statistics", "University of the Philippines-Diliman", "Quezon City, Philippines", "August 2019 - July 2023", 
-    list("GWA: 1.30, DOST Merit Scholar, Dean's Commendation, and best in class for 5 units.",
-         "Consistent University Scholar (equivalent to President's List)",
+    list("GWA: 1.30, DOST Merit Scholar",
+         "Consistent University Scholar (equivalent to President's Lister)",
          "Studied courses on statistical inference, statistical quality control, scientific writing, and programming."),
   "STEM Track", "Makati Science High School", "Makati City, Philippines", "June 2013 - April 2019", 
     list("Graduated with Honors")
@@ -142,13 +142,10 @@ tribble(
 ```{r projects}
 tribble(
   ~ when, ~ title, ~ details, ~ where, ~ url,
-  "2020", "Forecasting with multiple seasonality", "Methods and techniques to multiple seasonal forecasting in R", "UK NHS", "https://slides.mitchelloharawild.com/nhs2020/",
-  "2020", "Probabilistic cross-temporal hierarchies", "Recent developments of temporal reconciliation in fable.", "ISF", "https://slides.mitchelloharawild.com/isf2020/",
-  "2019", "Flexible futures for fable functionality", "Gradual introduction to tidy forecasting with fable. Flexibility is demonstrated with combination modelling and package extensibilitiy.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
-  "2019", "Flexible futures for fable functionality", "Reconciled forecasting of many time series with model combinations.", "ISF", "https://slides.mitchelloharawild.com/isf2019/",
-  "2018", "Tidy forecasting in R", "Discussion of recent developments to the fable framework.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
-  "2018", "Forecasting multiple seasonality with state switching", "The FASSTER model with the fable framework.", "useR!", "https://slides.mitchelloharawild.com/user2018",
-  "2017", "Models for forecasting multiple seasonality", "An introduction to the FASSTER model.", "MelbURN meetup", "https://slides.mitchelloharawild.com/melburn17/",
+  "Tableau", "Employee Exit Survey Dashboard", "Trends in company's attrition rates visualized in an interactive dashboard.", "UK NHS", "tinyurl.com/tableau-employee-dashboard",
+  "R", "Analyzing Soccer Matches from the 2018-2019 English Premier League", "Determining the top performing soccer teams and possible predictors of winning.", "ISF", "https://tinyurl.com/soccer-analysis",
+  "R", "How hot has it gotten in the Philippines?", "Animated visualization of the temperature in each Philippine region in the last century.", "MelbURN meetup", "https://github.com/MartinaGiron/R-Portfolio/tree/main/Philippines-AveTemp-Over-Time",
+  "R", "Mapping Discrimination Against Lesbians in Europe", "Mapping the proportion of lesbians who personally felt discriminated against or harassed on the grounds of gender.", "ISF", "https://github.com/MartinaGiron/R-Portfolio/tree/main/tidyrainbow-map",
 ) %>% 
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
 ```
@@ -159,13 +156,8 @@ tribble(
 ```{r articles}
 tribble(
   ~ when, ~ title, ~ details, ~ where, ~ url,
-  "2020", "Forecasting with multiple seasonality", "Methods and techniques to multiple seasonal forecasting in R", "UK NHS", "https://slides.mitchelloharawild.com/nhs2020/",
-  "2020", "Probabilistic cross-temporal hierarchies", "Recent developments of temporal reconciliation in fable.", "ISF", "https://slides.mitchelloharawild.com/isf2020/",
-  "2019", "Flexible futures for fable functionality", "Gradual introduction to tidy forecasting with fable. Flexibility is demonstrated with combination modelling and package extensibilitiy.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
-  "2019", "Flexible futures for fable functionality", "Reconciled forecasting of many time series with model combinations.", "ISF", "https://slides.mitchelloharawild.com/isf2019/",
-  "2018", "Tidy forecasting in R", "Discussion of recent developments to the fable framework.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
-  "2018", "Forecasting multiple seasonality with state switching", "The FASSTER model with the fable framework.", "useR!", "https://slides.mitchelloharawild.com/user2018",
-  "2017", "Models for forecasting multiple seasonality", "An introduction to the FASSTER model.", "MelbURN meetup", "https://slides.mitchelloharawild.com/melburn17/",
+  "R", "Customize Your ggplot2 Bar Graph - 5 ways to instantly improve your R data visualizations", "How to grab your reader’s attention and make professional-looking graphs", "UK NHS", "https://towardsdatascience.com/customize-your-ggplot2-bar-graph-5-ways-to-instantly-improve-your-r-data-visualizations-f9c11dfe0163",
+  "R", "How to Create a Custom Dataset in R", "Make your own synthetic dataset to analyze for your portfolio", "ISF", "https://towardsdatascience.com/how-to-create-a-custom-dataset-in-r-cf045e286656",
 ) %>% 
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
 ```
